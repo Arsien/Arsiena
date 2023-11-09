@@ -1,3 +1,4 @@
+```
 import tkinter as tk     #导入图形界面接口库，将代码以小游戏界面显示
 import random            #导入产生随机数的库
 number = random.randint(0,100)     #随机产生0-1024的一位数字
@@ -9,10 +10,8 @@ nminn = 0
 def eBtnClose(event):
     root.destroy()
 
+#以下一段代码是实现猜数字的功能
 
-'''
-以下一段代码是实现猜数字的功能
-'''
 def eBtnGuess(eent):
     global nmaxn
     global nminn
@@ -39,9 +38,9 @@ def eBtnGuess(eent):
     else:labelqval('你已经答对啦。。。')
 
 
-'''
-输出猜测的次数
-'''
+
+#输出猜测的次数
+
 def numGuess():
     if num == 1:
         labelqval('一次答对！')
@@ -50,9 +49,9 @@ def numGuess():
     else:
         labelqval('好吧，您超过十次了。。。尝试次数:'+str(num))
 
-'''
-该函数用于修改提示标签文字
-'''
+
+# 该函数用于修改提示标签文字
+
 def labelqval(vText):
     label_val_q.config(label_val_q,text = vText)
 
@@ -74,3 +73,4 @@ labelqval("请输入0到100之间任意整数：")
 entry_a.focus_get()
 print(number)
 root.mainloop()
+```
