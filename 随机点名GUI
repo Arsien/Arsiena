@@ -27,10 +27,7 @@ class RandomName(Frame):
     def set_name(self, elap):
         # 随机产生姓名
         cur = int(elap * 100 % 28)
-        name_list = ['周嘉铖', '钱珑超', '徐展', '尤桉哲', '钱涛', '黄舒怡', '胡志辉', '吴昭耀',
-                     '陈萌萌', '郑巧悦', '陈艳', '梁明皓', '蒋俊超', '徐颖', '倪宏涛', '潘梦倩',
-                     '俞靖庐', '王中阳', '毛贞强', '张嫒', '朱速航', '陈涛', '陆元超', '叶振雄',
-                     '奚申杰', '叶梦婷', '徐丽丽', '潘艳']
+        name_list = []#自定义点名列表
         self.timestr.set(name_list[cur])
 
     def Start(self):
